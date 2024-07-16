@@ -1,0 +1,23 @@
+{
+  "*": {
+    "theme": {
+      "sidebar": false,
+      "toc": true,
+      "breadcrumb": true,
+      "footer": true
+    }
+  },
+  "index": "Introduction",
+  "another": "Another Page",
+  "advanced": "Advanced (A Folder)",
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://www.linkedin.com/in/maheshraj-r-p-37689b164/",
+    "newWindow": true
+  }
+}
