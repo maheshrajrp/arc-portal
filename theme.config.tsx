@@ -2,6 +2,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
   logo: <span>The Arc</span>,
+  
   project: {
     link: 'https://github.com/maheshrajrp',
   },
@@ -12,6 +13,11 @@ const config: DocsThemeConfig = {
   },
   search:{ 
     placeholder: "Search"
+  },
+  useNextSeoProps: () => {
+    return {
+      titleTemplate: '%s – Arc'
+    }
   }
 }
 
