@@ -43,7 +43,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install
       - run: pnpm run build --if-present
+        name: Build Github Page
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
