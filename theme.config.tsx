@@ -10,6 +10,12 @@ const config: DocsThemeConfig = {
   footer: {
     text: <Footer />
   },
+  feedback: {
+    content: 'Have Questions?'
+  },
+  editLink: {
+    component: null
+  },
   search: {
     placeholder: "Search"
   },
