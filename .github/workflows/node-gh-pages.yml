@@ -45,7 +45,7 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install
-      - run: pnpm run build --if-present
+      - run: pnpm run build
         name: Build Github Page
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
