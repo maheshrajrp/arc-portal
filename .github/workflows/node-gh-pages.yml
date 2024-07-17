@@ -30,6 +30,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 9
+          run_install: false
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
@@ -37,10 +42,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
-      - run: npm ci
-      - run: npm run build --if-present
-      - run: npm test
+          cache: "pnpm"
+      - run: pnpm run build --if-present
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
