@@ -1,3 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    :root {
+        
+    }
+  
+    :root[class~="dark"] {
+ 
+    }
+  }
+
 .nx-h-0.nx-w-64.nx-shrink-0 {
     display: none;
 }

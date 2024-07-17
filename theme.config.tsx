@@ -1,17 +1,16 @@
 import { DocsThemeConfig } from 'nextra-theme-docs'
-
+import { Footer } from './components/footer'
 const config: DocsThemeConfig = {
   logo: <span>The Arc</span>,
-  
   project: {
-    link: 'https://github.com/maheshrajrp',
+    link: 'https://github.com/maheshrajrp/arc-portal',
   },
   primaryHue: 191,
-  docsRepositoryBase: 'https://github.com/maheshrajrp',
+  docsRepositoryBase: 'https://github.com/maheshrajrp/arc-portal',
   footer: {
-    text: 'The Arc - Iris Club',
+    text: <Footer />
   },
-  search:{ 
+  search: {
     placeholder: "Search"
   },
   useNextSeoProps: () => {
